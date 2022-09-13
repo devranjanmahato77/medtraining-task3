@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Employee form</title>
+    <!-- <link ref="stylesheet" href="./style.css"> -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    
+    <table>
+        <tr>
+            <td>
+                <h2><u>Employee form</u></h2>
+                <form onsubmit="event.preventDefault();submitForm()" autocomplete="off">
+
+                    <div>
+                        <label>Full Name</label><br>
+                        <input type="text" name="Full Name" placeholder="Full name" id="fullname"><br><br>
+                    </div>
+
+                    <div>
+                        <label>Email</label><br>
+                        <input type="text" name="email" placeholder="abc@gmail.com" id="email"><br><br>
+                    </div>
+
+                    <div>
+                        <label>Employee ID</label><br>
+                        <input type="text" name="Employee ID" placeholder="22MEDSOFT191" id="empid"><br><br>
+                    </div>
+
+                    <label>Gender</label>
+                    <select name="Gender" id="gender">
+                        <option value="Male">Male</option>
+                        <option value="Female">Female</option>
+                        <option value="Transgender">Transgender</option>
+                    </select>
+                    <div>
+
+                    </div>
+
+                    <div><br>
+                        <label>Mobile</label><br>
+                        <input type="number" name="mobile" placeholder="9876543210" id="mobile"><br><br>
+                    </div>
+
+                    <div>
+                        <label>Role</label>
+                        <select name="role" id="role">
+                            <option value="select course">select your role</option>
+                            <option value="frontend Developer">Front End Developer</option>
+                            <option value="Backend Developer">Back End Developer</option>
+                            <option value="Marketing Executive">Marketing Executive</option>
+                            <option value="System Administator">System Administator</option>
+                            <option value="Intern">Intern</option>
+                        </select>
+                    </div><br><br>
+
+                    <div>
+                        <input type="submit" name="submit" value="Submit">
+                        <input type="reset" name="reset" value="Reset">
+                        
+                    </div>
+
+
+                </form>
+            </td>
+
+            <!--  -->
+        </tr>
+    </table>
+
+    <table>
+        <tr>
+            <td>
+                <h2><u>Employers detail list</u></h2>
+                <table class="list" id="emplist">
+                    <thead>
+                        <tr>
+                            <th>Full Name</th>
+                            <th>Email</th>
+                            <th>Employee ID</th>
+                            <th>Gender</th>
+                            <th>Mobile</th>
+                            <th>Role</th>
+                            <th></th>
+                        </tr>
+                    </thead>
+
+                    <tbody>
+
+                    </tbody>
+                </table>
+            </td>
+        </tr>
+    </table>
+
+
+    <script src="./function.js"></script>
+</body>
+
+</html>
